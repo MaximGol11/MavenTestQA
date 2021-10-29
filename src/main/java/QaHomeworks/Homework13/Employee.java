@@ -20,9 +20,7 @@ public abstract class Employee {
         return age;
     }
 
-    public double getSalary() {
-        return salary;
-    }
+    public abstract double getSalary();
 
     public int getBaseSalary() {
         return baseSalary;

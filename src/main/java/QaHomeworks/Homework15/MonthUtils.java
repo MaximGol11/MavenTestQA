@@ -1,13 +1,12 @@
 package QaHomeworks.Homework15;
 
-import java.util.ArrayList;
 
 public class MonthUtils {
 
-    public static class Month {
-        private String name;
-        private int numberOfDays;
-        private int numberOfWorkDays;
+    public static final class Month {
+        private final String name;
+        private final int numberOfDays;
+        private final int numberOfWorkDays;
 
 
         public Month(String name, int numberOfDays, int numberOfWorkDays) {
@@ -27,7 +26,24 @@ public class MonthUtils {
         public int getNumberOfWorkDays() {
             return numberOfWorkDays;
         }
+
+        public static Month[] getYear(){
+            return MonthUtils.YEAR;
+        }
+        public static Month[] getWinter() {
+            return new Month[]{YEAR[0], YEAR[1], YEAR[11]};
+        }
+
+        @Override
+        public String toString() {
+            return "Month{" +
+                    "name='" + name + '\'' +
+                    ", numberOfDays=" + numberOfDays +
+                    ", numberOfWorkDays=" + numberOfWorkDays +
+                    '}';
+        }
     }
+
 
     public static final Month[] YEAR =
     {

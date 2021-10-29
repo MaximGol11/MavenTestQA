@@ -12,6 +12,6 @@ public class Main {
         //System.out.println(Helper.findByAllName("Ann", Manager.managers));
         //System.out.println(Helper.findByAllNameArray("Anna", Manager.managers).toString());
         System.out.println(manager1.getSalary());
-        System.out.println(Helper.getSalarySum(Manager.managers));
+        //System.out.println(Helper.getSalarySum(Manager.managers));
     }
 }

@@ -3,6 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -83,5 +84,6 @@ public class SeleniumTestHomework12 {
         WebElement cartCount = driver.findElement(By.xpath("//span[text()='6']"));
         Assert.assertTrue(cartCount.getText().contains("6"));
     }
+
 
 }

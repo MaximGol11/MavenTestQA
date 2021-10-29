@@ -1,6 +1,6 @@
 package QaHomeworks.Homework15;
 
-public class Manager extends Employee {
+public final class Manager extends BaseEmployee {
     private int countOfWorkers;
 
     public Manager(String name, int age, char sex, double salaryInDay, int countOfWorkers) {
